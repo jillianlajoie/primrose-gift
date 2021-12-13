@@ -1,1 +1,342 @@
-/* You can add global styles to this file, and also import other style files */
+/* COLOUR CODES
+PINK - FF7BAC
+YELLOW - EBCB32
+BLUE - 94C3CD
+GREEN - 95CE67
+PURPLE - 59648E
+ */
+
+html,
+body {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/****************************** mobile ******************************/
+
+@media screen and (max-width: 800px) {
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  section {
+    padding: 1.5% 0 1.5% 0;
+    margin: 0 2.5% 0 2.5%;
+  }
+  .pink-section {
+    background-color: #fef1ef;
+    padding: 0;
+    margin: 0;
+  }
+  h2,
+  h3 {
+    font-family: "Kanit", sans-serif, "Montserrat";
+    font-size: 34px;
+    letter-spacing: 0.1em;
+    margin: 0;
+    text-align: center;
+    line-height: 75%;
+  }
+
+  .nav-about {
+    order: 2;
+  }
+  .nav-logo {
+    order: 1;
+  }
+  .nav-contact {
+    order: 3;
+  }
+  .brand-logo {
+    height: auto;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .confetti {
+    width: 0%;
+  }
+  .image-cont {
+    gap: 10px;
+  }
+  .image-trio {
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+
+  .puzzle-image {
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .extras-text {
+    text-align: center;
+  }
+
+  .contact-item {
+    width: 100%;
+    height: auto;
+    align-self: center;
+    text-align: center;
+    order: 2;
+  }
+  .contact-item h2 {
+    text-align: center;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    text-align: left;
+    border-radius: 5px;
+    border: 1px solid #707070;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  textarea {
+    height: 85px;
+  }
+
+  .contact-photo {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    align-self: center;
+    order: 1;
+  }
+}
+
+/****************************** desktop ******************************/
+@media screen and (min-width: 800px) {
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  section {
+    padding: 3% 0 3% 0;
+    margin: 0 5% 0 5%;
+  }
+  #pink-section {
+    background-color: #fef1ef;
+    margin: 0;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  #hero-section {
+    padding-top: 0px;
+  }
+  h2,
+  h3 {
+    font-family: "Kanit", sans-serif, "Montserrat";
+    font-size: 60px;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    margin: 0;
+  }
+  h3 {
+    text-align: start;
+  }
+  .nav-bar {
+    justify-content: center;
+    align-items: center;
+    margin: 0 5% 0 5%;
+    gap: 50px;
+  }
+  .brand-logo {
+    height: auto;
+    max-width: 800px;
+    width: 100%;
+    align-self: center;
+  }
+
+  .confetti {
+    height: auto;
+    width: 100%;
+    max-width: 1920px;
+  }
+  .image-cont {
+    justify-content: space-between;
+    gap: 10px;
+  }
+  .image-trio {
+    height: auto;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+  .puzzle-image {
+    height: auto;
+    width: 50%;
+    border-radius: 10px;
+  }
+
+  .contact-item {
+    width: 50%;
+    height: auto;
+    align-self: center;
+  }
+  .contact-item h2 {
+    text-align: start;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    text-align: left;
+    border-radius: 5px;
+    border: 1px solid #707070;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  textarea {
+    height: 85px;
+  }
+
+  .contact-photo {
+    border-radius: 10px;
+    width: 50%;
+    height: auto;
+    align-self: center;
+  }
+}
+
+/****************************** GLOBAL STYLES ******************************/
+
+body {
+  font-family: "Montserrat", "Helvetica Neue", sans-serif;
+  letter-spacing: 0.1em;
+  font-size: 15px;
+}
+#how-to {
+  padding-top: 0;
+}
+
+h2 {
+  text-align: center;
+  color: #ff7bac;
+}
+h3 {
+  color: #59648e;
+}
+
+button {
+  background-color: #ff7babd7;
+  border-radius: 5px;
+  border: 1px solid #ff7bac;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+
+.large-btn {
+  font-size: 20px;
+  width: 300px;
+  height: 50px;
+}
+
+.small-btn {
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+}
+
+/* NAVBAR */
+
+.nav-bar-item {
+  list-style: none;
+  font-family: "Kanit", sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  letter-spacing: 0.2em;
+  flex-basis: auto;
+}
+a {
+  text-decoration: none;
+  color: #59648e;
+}
+
+/* HERO SECTION */
+
+.hero-container {
+  justify-content: center;
+}
+
+.hero-image {
+  height: auto;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* HOW-TO STEPPER */
+.how-to-cont p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  padding-bottom: 1%;
+}
+h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+  color: #59648e;
+  margin: 1.5%;
+}
+
+/* EXTRA EXTRAS */
+.main-cont {
+  gap: 20px;
+}
+
+.extras-text {
+  align-self: center;
+}
+
+/* CONTACT FORM */
+
+footer {
+  text-align: center;
+  padding: 1.5%;
+}
+
+footer p {
+  font-family: "Montserrat", sans-serif;
+  color: #59648e;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+}
+
+.fab {
+  color: #59648e;
+  font-size: 18px;
+  align-self: center;
+}
+h4 {
+  font-family: "Kanit", sans-serif, "Montserrat";
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin: 0;
+  text-align: center;
+  align-self: center;
+  color: #59648e;
+}
